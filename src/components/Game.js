@@ -87,7 +87,6 @@ export default class Game extends React.Component {
 
         return (
             <div className="game">
-
                 <div className="game-board">
                     <Header value="Tic Tac Toe"></Header>
                     <Board
