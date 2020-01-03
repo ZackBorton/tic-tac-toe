@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './Board';
+import Header from './Header'
 
 function calculateWinner(squares) {
     const lines = [
@@ -68,8 +69,8 @@ export default class Game extends React.Component {
 
         const moves = history.map((step, move) => {
             const desc = move ?
-                'Go to move #' + move :
-                'Go to game start';
+                'Move #' + move :
+                'Return to Start';
             return (
                 <li key={move}>
                     <button onClick={() => this.jumpTo(move)}>{desc}</button>
@@ -86,13 +87,18 @@ export default class Game extends React.Component {
 
         return (
             <div className="game">
+
                 <div className="game-board">
+                    <Header value="Tic Tac Toe"></Header>
                     <Board
                         squares={current.squares}
                         onClick={i => this.handleClick(i)}
                     />
                 </div>
                 <div className="game-info">
+                    <div className="board-row">
+                    </div>
+                    <h1 className="header">Info</h1>
                     <div>{status}</div>
                     <ol>{moves}</ol>
                 </div>
