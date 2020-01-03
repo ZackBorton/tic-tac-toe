@@ -1,4 +1,4 @@
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)![Build Status](https://travis-ci.com/ZackBorton/tic-tac-toe.svg?branch=master)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)[![Build Status](https://travis-ci.com/ZackBorton/tic-tac-toe.svg?token=jZNcj1bJUCyLgrR7QyUU&branch=master)](https://travis-ci.com/ZackBorton/tic-tac-toe)
 
 # tic-tac-toe
 
