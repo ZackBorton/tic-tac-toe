@@ -54,13 +54,13 @@ ol, ul {
 .game-info {
     margin-left: 20px;
     position: relative;
+    text-align: left;
 }
 
 .header {
     border-style: solid;
     border-width: 1px;
     text-align: center;
-    background-color: #fffff0;
     color: #cc8d80;
 }
 
@@ -78,4 +78,18 @@ ol, ul {
 
 .o-value {
     color: #a8b9bd
+}
+
+.header-settings {
+    text-align: center;
+    margin: 0 auto;
+    width: 25%;
+    height: 75%;
+    background-color: #fffff0;
+    color: #cc8d80;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto;
 }

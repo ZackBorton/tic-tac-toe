@@ -82,7 +82,10 @@ export default class Game extends React.Component {
         if (winner) {
             status = "Winner: " + winner;
         } else {
-            status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+            if (this.state.stepNumber > 8) {
+                status = "Draw: Restart match"
+            } else
+                status = "Next player: " + (this.state.xIsNext ? "X" : "O");
         }
 
         return (
