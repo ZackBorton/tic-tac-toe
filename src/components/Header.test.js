@@ -3,7 +3,8 @@ import {render} from '@testing-library/react';
 import Header from './Header';
 
 test('renders learn react link', () => {
-    const {getByText} = render(<Header/>);
+    let expectedText =  "Tic Tac Toe";
+    const {getByText} = render(<Header value={expectedText}/>);
     const linkElement = getByText(/Tic Tac Toe/i);
     expect(linkElement).toBeInTheDocument();
 });

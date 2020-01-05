@@ -14,6 +14,7 @@ Remaining
 
 Uses color pallete: https://www.color-hex.com/color-palette/85918
 
+// TODO : Update readme documentation
 # Heroku => 
 # Travis CI => Done
 # Add draw to game=> 
