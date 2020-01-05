@@ -115,3 +115,8 @@ fabric.properties
 .idea/**/markdown-navigator/
 
 # End of https://www.gitignore.io/api/webstorm
+.idea/misc.xml
+.idea/modules.xml
+.idea/react-starter.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/Project_Default.xml
