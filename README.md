@@ -17,3 +17,5 @@ Uses color pallete: https://www.color-hex.com/color-palette/85918
 # Heroku => 
 # Travis CI => Done
 # Add draw to game=> 
+
+

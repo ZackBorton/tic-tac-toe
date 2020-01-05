@@ -1,18 +1,5 @@
 import React from 'react';
-
-function Square(props) {
-    let classes;
-    let base = "square ";
-    if (props.value === "X")
-        classes = base + "o-value";
-    else
-        classes = base + "x-value";
-    return (
-        <button className={classes} onClick={props.onClick}>
-            {props.value}
-        </button>
-    );
-}
+import Square from './Square'
 
 export default class Board extends React.Component {
     renderSquare(i) {
