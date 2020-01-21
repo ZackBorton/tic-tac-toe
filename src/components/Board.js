@@ -30,7 +30,9 @@ export default class Board extends React.Component {
                     {this.renderSquare(8)}
                 </div>
                 <div className="board-row">
-                    <button onClick={() => window.location.reload()}>Restart Game</button>
+                    <button onClick={() => window.location.reload()} type="button" className="btn btn-dark">Restart
+                        Game
+                    </button>
                 </div>
             </div>
         );

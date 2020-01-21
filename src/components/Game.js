@@ -1,6 +1,6 @@
 import React from 'react';
 import Board from './Board';
-import Header from './Header'
+import GameTitle from './GameTitle'
 import CalculateWinner from './Winner'
 
 export default class Game extends React.Component {
@@ -54,7 +54,7 @@ export default class Game extends React.Component {
                 'Return to Start';
             return (
                 <li key={move}>
-                    <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                    <button type="button" className="btn btn-dark" onClick={() => this.jumpTo(move)}>{desc}</button>
                 </li>
             );
         });
@@ -72,7 +72,7 @@ export default class Game extends React.Component {
         return (
             <div className="game">
                 <div className="game-board">
-                    <Header value="Tic Tac Toe"></Header>
+                    <GameTitle value="Tic Tac Toe"></GameTitle>
                     <Board
                         squares={current.squares}
                         onClick={i => this.handleClick(i)}

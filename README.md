@@ -4,7 +4,7 @@
 
 # Started with the react tutorial as a base and made some light enhancements
 * Cosmetics
-    * Header
+    * GameTitle
     * Sidebar
 
 Remaining
