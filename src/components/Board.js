@@ -12,25 +12,26 @@ export default class Board extends React.Component {
     }
 
     render() {
+        const rows = new Array(3).fill(0);
+        let superIndex = 0;
         return (
             <div>
+                {
+                    rows.map(row => {
+                        const squares = new Array(3).fill(0);
+                        return <div className="board-row">
+                            {
+                                squares.map((item, index) => {
+                                    superIndex++;
+                                    return this.renderSquare(superIndex)
+                                })
+                            }
+                        </div>
+                    })
+                }
                 <div className="board-row">
-                    {this.renderSquare(0)}
-                    {this.renderSquare(1)}
-                    {this.renderSquare(2)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(3)}
-                    {this.renderSquare(4)}
-                    {this.renderSquare(5)}
-                </div>
-                <div className="board-row">
-                    {this.renderSquare(6)}
-                    {this.renderSquare(7)}
-                    {this.renderSquare(8)}
-                </div>
-                <div className="board-row">
-                    <button onClick={() => window.location.reload()} type="button" className="btn btn-dark">Restart
+                    <button onClick={() => window.location.reload()} type="button"
+                            className="btn btn-dark">Restart
                         Game
                     </button>
                 </div>
