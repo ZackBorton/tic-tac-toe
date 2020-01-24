@@ -13,7 +13,7 @@ export default class Board extends React.Component {
 
     render() {
         const rows = new Array(3).fill(0);
-        let superIndex = 0;
+        let squareIndex = 0;
         return (
             <div>
                 {
@@ -22,8 +22,8 @@ export default class Board extends React.Component {
                         return <div className="board-row">
                             {
                                 squares.map((item, index) => {
-                                    superIndex++;
-                                    return this.renderSquare(superIndex)
+                                    squareIndex++;
+                                    return this.renderSquare(squareIndex)
                                 })
                             }
                         </div>
