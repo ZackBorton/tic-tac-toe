@@ -1,4 +1,4 @@
-import calculateWinner from "./GameStatus";
+import {calculateWinner} from "./GameStatus";
 
 test('no winner returns null', () => {
     var didWin = calculateWinner([1, 2, 3]);
