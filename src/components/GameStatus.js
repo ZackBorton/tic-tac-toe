@@ -1,5 +1,3 @@
-import React from 'react'
-
 /*
 * A presentational container to return the status of the game
 */
