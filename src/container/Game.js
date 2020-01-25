@@ -1,7 +1,7 @@
 import React from 'react';
 import Board from '../components/Board';
 import GameTitle from '../components/GameTitle'
-import CalculateWinner from '../components/Winner'
+import {calculateWinner} from '../components/GameStatus'
 
 export default class Game extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ export default class Game extends React.Component {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1];
         const squares = current.squares.slice();
-        if (CalculateWinner(squares) || squares[i]) {
+        if (calculateWinner(squares) || squares[i]) {
             return;
         }
         squares[i] = this.state.xIsNext ? "X" : "O";
@@ -39,8 +39,7 @@ export default class Game extends React.Component {
     render() {
         const history = this.state.history;
         const current = history[this.state.stepNumber];
-        const winner = CalculateWinner(current.squares);
-
+        const winner = calculateWinner(current.squares);
         let status;
         if (winner) {
             status = "Winner: " + winner;
