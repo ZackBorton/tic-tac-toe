@@ -36,28 +36,10 @@ export default class Game extends React.Component {
         });
     }
 
-    jumpTo(step) {
-        this.setState({
-            stepNumber: step,
-            xIsNext: (step % 2) === 0
-        });
-    }
-
     render() {
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = CalculateWinner(current.squares);
-
-        const moves = history.map((step, move) => {
-            const desc = move ?
-                'Move #' + move :
-                'Return to Start';
-            return (
-                <li key={move}>
-                    <button type="button" className="btn btn-dark" onClick={() => this.jumpTo(move)}>{desc}</button>
-                </li>
-            );
-        });
 
         let status;
         if (winner) {
@@ -72,7 +54,9 @@ export default class Game extends React.Component {
         return (
             <div>
                 <div className="game-info">
-                    <div>{status}</div>
+                    <div className='Status'>
+                        <h1>{status}</h1>
+                    </div>
                 </div>
                 <div className="game">
 
