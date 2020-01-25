@@ -1,22 +1,9 @@
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)[![Build Status](https://travis-ci.com/ZackBorton/tic-tac-toe.svg?token=jZNcj1bJUCyLgrR7QyUU&branch=master)](https://travis-ci.com/ZackBorton/tic-tac-toe)
 
 # tic-tac-toe
+Basic tic tac toe application
 
-# Started with the react tutorial as a base and made some light enhancements
-* Cosmetics
-    * GameTitle
-    * Sidebar
-
-Remaining
-* Use Colors
-* Game declares Ties
-* Text on left is aligned with board
-
-Uses color pallete: https://www.color-hex.com/color-palette/85918
-
-// TODO : Update readme documentation
-# Heroku => 
-# Travis CI => Done
-# Add draw to game=> 
-
-
+## Heroku
+* [App](https://sleepy-stream-63163.herokuapp.com)
+* git push heroku master
+## Travis CI - Runs builds 

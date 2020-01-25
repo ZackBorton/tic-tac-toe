@@ -3,12 +3,6 @@ import React from 'react'
 /*
 * A presentational container to return the status of the game
 */
-export function getGameStatus(props) {
-    if (this.state.winner) return "Winner: ";
-    if (this.state.stepNumber > 8) return "Draw: Restart match";
-    return "Next player: " + (props.state.xIsNext ? "X" : "O");
-}
-
 export function calculateWinner(squares) {
     const lines = [
         [0, 1, 2],
